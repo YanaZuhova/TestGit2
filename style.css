@@ -1,3 +1,58 @@
-h1 {
-    color: blue;
+@import url("https://fonts.googleapis.com/css2?family-Lato&display-swap");
+* {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f8f6;
+}
+
+.header {
+    background-color: #0707f8c5;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.about {
+    background-color: #bbf11979;
+}
+
+.articles {
+    background-color: #c7ffcd;
+}
+
+.contacts {
+    background-color: #d5daff;
+}
+
+.section {
+    border-radius: 25px;
+    padding: 25px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.contacts input,
+.contacts textarea {
+    background-color: #e3e3ef;
+    border: 2px #a7a7a7 solid;
+}
+
+.element {
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin-left: 18px;
+}
+
+img {
+    border-radius: 40px;
 }

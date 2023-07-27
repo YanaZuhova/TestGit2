@@ -4,69 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yana Zuhova</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Yana Zuhova</h1>
     </header>
-    <section>
+    <section class="section about">
       <h2>Обо мне</h2>
-      <img width="200px" src="fotochka.jpg" alt="foto_Yana" />
-      <p>
-        Меня зовут Яна Зюхова. Я работаю геодезистом и учусь на
-        веб-разаработчика.
-      </p>
-      <h3>Мои хобби</h3>
-      <ul>
-        <li>Измерения тахеометром</li>
-        <li>Программирование</li>
-        <li>Спортивное ориентирование</li>
-        <li>Лыжные гонки</li>
-        <li>Автомобили</li>
-        <li>Легкая Атлетика</li>
-        <li>Путешествия</li>
-        <li>Чтение</li>
-        <li>Акробатика</li>
-        <li>GPS-съемка</li>
-      </ul>
-
-      <a href="https://www.instagram.com/hardheroyanik/">
-        Подписывайтесь в инстаграмме
-      </a>
+      <div class="element">
+        <img width="200px" src="fotochka.jpg" alt="foto_Yana" />
+        <p>
+          Меня зовут Яна Зюхова. Я работаю геодезистом и учусь на
+          веб-разаработчика.
+        </p>
+        <a href="https://www.instagram.com/hardheroyanik/">
+          Подписывайтесь в инстаграмме
+        </a>
+      </div>
+      <div class="element">
+        <h3>Мои хобби</h3>
+        <ul>
+          <li>Измерения тахеометром</li>
+          <li>Программирование</li>
+          <li>Спортивное ориентирование</li>
+          <li>Лыжные гонки</li>
+          <li>Автомобили</li>
+          <li>Легкая Атлетика</li>
+          <li>Путешествия</li>
+          <li>Чтение</li>
+          <li>Акробатика</li>
+          <li>GPS-съемка</li>
+        </ul>
+      </div>
+      <div class="element">
+        <h3>Технологии</h3>
+        <table border="2">
+          <thead>
+            <tr>
+              <th>Область</th>
+              <th>Технологии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Backend</td>
+              <td>Node.js, Express, C#, .NET</td>
+            </tr>
+            <tr>
+              <td>frontend</td>
+              <td>React.js</td>
+            </tr>
+            <tr>
+              <td>Базы данных</td>
+              <td>Mango.db, MySQL</td>
+            </tr>
+            <tr>
+              <td>Другое</td>
+              <td>Git, Doscer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
-    <section>
-      <h3>Технологии</h3>
-      <table border="2">
-        <thead>
-          <tr>
-            <th>Область</th>
-            <th>Технологии</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Backend</td>
-            <td>Node.js, Express, C#, .NET</td>
-          </tr>
-          <tr>
-            <td>frontend</td>
-            <td>React.js</td>
-          </tr>
-          <tr>
-            <td>Базы данных</td>
-            <td>Mango.db, MySQL</td>
-          </tr>
-          <tr>
-            <td>Другое</td>
-            <td>Git, Doscer</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section>
+    <section class="section articles">
       <h2>Статьи</h2>
-      <article>
+      <article class="element">
         <h3>Почему я выбрал JS</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
@@ -76,14 +79,13 @@
         </p>
         <a href="JS.html">Читать о JS</a>
       </article>
-      <article>
+      <article class="element">
         <h3>Примекняемые технологии</h3>
         <p>В этой статье я рассказываю про сови технологии</p>
         <a href="Tekhnolog.html">Читать про технологии</a>
       </article>
-      
     </section>
-    <section>
+    <section class="section contacts">
       <h3>Написать мне</h3>
       <form>
         <div>
