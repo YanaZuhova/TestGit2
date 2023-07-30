@@ -43,6 +43,9 @@ body {
 .contacts textarea {
     background-color: #e3e3ef;
     border: 2px #a7a7a7 solid;
+    flex: 3;
+    outline: none;
+    padding: 10px;
 }
 
 .element {
@@ -55,4 +58,17 @@ body {
 
 img {
     border-radius: 40px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.form label {
+    flex: 1;
+    align-self: center;
 }
