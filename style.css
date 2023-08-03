@@ -9,6 +9,30 @@ body {
     background-color: #f2f8f6;
 }
 
+a {
+    color: #4b2121;
+    text-decoration: none;
+    font-size: larger;
+}
+
+a:hover {
+    color: #c56934;
+}
+
+button {
+    background-color: rgb(118, 80, 206);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: medium;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
 .header {
     background-color: #0707f8c5;
     color: white;
@@ -21,6 +45,14 @@ body {
 
 .about {
     background-color: #bbf11979;
+}
+
+.about ul {
+    margin-left: 15px;
+}
+
+.about p {
+    margin-bottom: 20px;
 }
 
 .articles {
@@ -43,6 +75,9 @@ body {
 .contacts textarea {
     background-color: #e3e3ef;
     border: 2px #a7a7a7 solid;
+    flex: 3;
+    outline: none;
+    padding: 10px;
 }
 
 .element {
@@ -55,4 +90,17 @@ body {
 
 img {
     border-radius: 40px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.form label {
+    flex: 1;
+    align-self: center;
 }
