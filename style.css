@@ -104,3 +104,36 @@ img {
     flex: 1;
     align-self: center;
 }
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    height: 53px;
+}
+
+.navigation a {
+    color: #d3f1e7;
+}
+
+.navigation li {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li:hover {
+    background-color: #7e7ee6c5;
+}
+
+.table {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #a7a7a7;
+    color: #fff;
+}
