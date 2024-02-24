@@ -170,3 +170,10 @@ img {
         width: 250px;
     }
 }
+
+    .card input {
+        max-width: 80%;}
+
+    .warning {
+        background-color: #b6ce1ec5;
+    }
