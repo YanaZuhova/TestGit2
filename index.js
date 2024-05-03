@@ -1,6 +1,4 @@
-let allArticles = document.getElementById("allArticles");
 allArticles.innerText = "Все статьи (3)";
-
 let articles = document.getElementById("allArticles");
 let sectionArt = document.getElementById("withArticles");
 let contacts = document.getElementById("contacts");
@@ -15,15 +13,6 @@ let goTopBtn = document.getElementById("GoTop");
 goTopBtn.addEventListener("click", () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 });
-
-articles.addEventListener("click", () => {
-    sectionArt.scrollIntoView({behavior: "smooth"});
-});
-
-contacts.addEventListener("click", () => {
-    sectionCont.scrollIntoView({behavior: "smooth"});
-});
-
 
 function scrollToElement(element) {
     element.scrollIntoView({ behavior: "smooth" });
