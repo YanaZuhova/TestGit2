@@ -1,4 +1,4 @@
-let allArticles = document.getElementsById("articles");
+let allArticles = document.getElementById("allArticles");
 allArticles.innerText = "Все статьи (3)";
 
 let articles = document.getElementById("allArticles");
@@ -30,5 +30,9 @@ function scrollToElement(element) {
   };
 
   allArticles.addEventListener("click", () => {
-    scrollToElement(atriclesSection);
+    scrollToElement(sectionArt);
+  });
+
+  contacts.addEventListener("click", () => {
+    scrollToElement(sectionCont);
   });
