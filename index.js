@@ -1,5 +1,5 @@
-const navigation = document.getElementById("navigation");
-const allArticles = navigation.getElementsByTagName("a")[0].innerText = "Все статьи (3)";
+let allArticles = document.getElementsById("articles");
+allArticles.innerText = "Все статьи (3)";
 
 let articles = document.getElementById("allArticles");
 let sectionArt = document.getElementById("withArticles");
@@ -10,18 +10,18 @@ document.querySelectorAll("h3")[
    document.querySelectorAll("h3").lengh - 1 
 ];
 
-// let goTopBtn = document.getElementById("GoTop");
+let goTopBtn = document.getElementById("GoTop");
 
 goTopBtn.addEventListener("click", () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 });
 
 articles.addEventListener("click", () => {
-    withArticles.scrollIntoView({behavior: "smooth"});
+    sectionArt.scrollIntoView({behavior: "smooth"});
 });
 
 contacts.addEventListener("click", () => {
-    withContacts.scrollIntoView({behavior: "smooth"});
+    sectionCont.scrollIntoView({behavior: "smooth"});
 });
 
 
