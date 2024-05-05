@@ -22,3 +22,29 @@ function scrollToElement(element) {
   contacts.addEventListener("click", () => {
     scrollToElement(sectionCont);
   });
+
+  let dynamicDiv = document.getElementById("dynamic");
+
+  arts = [
+    { title: "Почему я выбрал JS", text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cumque accusamus voluptatem vitae tempore saepe eaque similique esse provident alias. Excepturi ab eveniet repudiandae perspiciatis sequi, distinctio debitis saepe! Inventore?" , file: "JS.html"},
+    { title: "Примекняемые технологии", text: "В этой статье я рассказываю про свои технологии" , file: "Tekhnolog.html"},
+];
+
+let dataArt = arts.map((art) => {
+  let { title, text, file } = art;
+
+  // console.log(title);
+  // console.log(text);
+  // console.log(file);
+
+  let artCard = document.createElement("div");
+    artCard.className = "articard";
+    artCard.innerText = `${title} ${text} ${file}`;
+    return artCard;
+});
+
+console.log(dataArt);
+
+dynamicDiv.append(...dataArt);
+
+console.log(...dataArt);
