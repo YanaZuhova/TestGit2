@@ -1,12 +1,9 @@
-allArticles.innerText = "Все статьи (3)";
 let articles = document.getElementById("allArticles");
+articles.innerText = "Все статьи (3)";
+
 let sectionArt = document.getElementById("withArticles");
 let contacts = document.getElementById("contacts");
 let sectionCont = document.getElementById("withContacts");
-
-document.querySelectorAll("h3")[
-   document.querySelectorAll("h3").lengh - 1 
-];
 
 let goTopBtn = document.getElementById("GoTop");
 
@@ -15,7 +12,7 @@ goTopBtn.addEventListener("click", () => {
 });
 
 function scrollToElement(element) {
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ behavior: "smooth"});
   };
 
   allArticles.addEventListener("click", () => {
