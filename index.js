@@ -15,7 +15,7 @@ function scrollToElement(element) {
     element.scrollIntoView({ behavior: "smooth"});
   };
 
-  allArticles.addEventListener("click", () => {
+  articles.addEventListener("click", () => {
     scrollToElement(sectionArt);
   });
 
@@ -26,8 +26,8 @@ function scrollToElement(element) {
   let dynamicDiv = document.getElementById("dynamic");
 
   arts = [
-    { title: "Почему я выбрал JS", text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cumque accusamus voluptatem vitae tempore saepe eaque similique esse provident alias. Excepturi ab eveniet repudiandae perspiciatis sequi, distinctio debitis saepe! Inventore?" , file: "JS.html"},
-    { title: "Примекняемые технологии", text: "В этой статье я рассказываю про свои технологии" , file: "Tekhnolog.html"},
+    { title: "Why JS", text: "Lorem ipsum dolor sit! Inventore?" , file: "JS.html"},
+    { title: "Tехнологии", text: "Статья про технологии" , file: "Tekhnolog.html"},
 ];
 
 let dataArt = arts.map((art) => {
@@ -40,6 +40,19 @@ let dataArt = arts.map((art) => {
   let artCard = document.createElement("div");
     artCard.className = "articard";
     artCard.innerText = `${title} ${text} ${file}`;
+
+    const titleElement = document.createElement("h3");
+    titleElement.innerText = title;
+    artCard.append(titleElement);
+
+    const textElement = document.createElement("p");
+    titleElement.innerText = text;
+    artCard.append(textElement);
+
+    const fileElement = document.createElement("a");
+    titleElement.innerText = file;
+    artCard.append(fileElement);
+
     return artCard;
 });
 
