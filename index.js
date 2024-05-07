@@ -25,12 +25,12 @@ function scrollToElement(element) {
 
   let dynamicDiv = document.getElementById("dynamic");
 
-  arts = [
-    { title: "Why JS", text: "Lorem ipsum dolor sit! Inventore?" , file: "JS.html"},
-    { title: "Tехнологии", text: "Статья про технологии" , file: "Tekhnolog.html"},
+  let arts = [
+    { title: "Why JS", text: "Lorem ipsum dolor sit! Inventore?" , file: href = "JS.html"},
+    { title: "Tехнологии", text: "Статья про технологии" , file: href = "Tekhnolog.html"},
 ];
 
-let dataArt = arts.map((art) => {
+  let dataArt = arts.map((art) => {
   let { title, text, file } = art;
 
   // console.log(title);
@@ -38,19 +38,19 @@ let dataArt = arts.map((art) => {
   // console.log(file);
 
   let artCard = document.createElement("div");
-    artCard.className = "articard";
-    artCard.innerText = `${title} ${text} ${file}`;
+    artCard.className = "element";
 
     const titleElement = document.createElement("h3");
     titleElement.innerText = title;
     artCard.append(titleElement);
 
     const textElement = document.createElement("p");
-    titleElement.innerText = text;
+    textElement.innerText = text;
     artCard.append(textElement);
 
     const fileElement = document.createElement("a");
-    titleElement.innerText = file;
+    fileElement.href = file;
+    fileElement.innerText = "Читать";
     artCard.append(fileElement);
 
     return artCard;
