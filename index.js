@@ -1,4 +1,4 @@
-import {arts, dataArt,} from ".module.js";
+import {arts, dataArt,} from "./module.js";
 
 let articles = document.getElementById("allArticles");
 articles.innerText = "Все статьи (3)";
