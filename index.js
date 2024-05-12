@@ -1,4 +1,4 @@
-import {arts, dataArt,} from "./module.js";
+import { arts, dataArt } from "./articleCreation.js";
 
 let articles = document.getElementById("allArticles");
 articles.innerText = "Все статьи (3)";
@@ -10,22 +10,22 @@ let sectionCont = document.getElementById("withContacts");
 let goTopBtn = document.getElementById("GoTop");
 
 goTopBtn.addEventListener("click", () => {
-    window.scrollTo({top: 0, behavior: "smooth"});
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 function scrollToElement(element) {
-    element.scrollIntoView({ behavior: "smooth"});
-  };
+    element.scrollIntoView({ behavior: "smooth" });
+}
 
-  articles.addEventListener("click", () => {
+articles.addEventListener("click", () => {
     scrollToElement(sectionArt);
-  });
+});
 
-  contacts.addEventListener("click", () => {
+contacts.addEventListener("click", () => {
     scrollToElement(sectionCont);
-  });
+});
 
-  let dynamicDiv = document.getElementById("dynamic");
+let dynamicDiv = document.getElementById("dynamic");
 
 console.log(dataArt);
 
