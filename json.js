@@ -1,4 +1,4 @@
-import dataArt from "./articlesService.json" assert { type: "json"};
+import dataArt from "./articlesService.json" with { type: "json" };
 
 // console.log(dataArt);
 
