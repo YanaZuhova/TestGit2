@@ -1,0 +1,22 @@
+{
+    "arts": [
+        {
+            "title": "Why JS",
+            "text": "Lorem ipsum dolor sit! Inventore?",
+            "file": "JS.html",
+            "linkText": "Читать статью о JS"
+        },
+        {
+            "title": "Tехнологии",
+            "text": "Статья про технологии",
+            "file": "Tekhnolog.html",
+            "linkText": "Читать статью о Tekhno"
+        },
+        {
+            "title": "React",
+            "text": "Статья про реакт",
+            "file": "JS.html",
+            "linkText": "Читать статью про React"
+        }
+    ]
+}

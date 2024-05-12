@@ -12,7 +12,7 @@ export
   // console.log(text);
   // console.log(file);
 
-  let artCard = document.createElement("div");
+  let artCard = document.createElement("article");
     artCard.className = "element";
 
     const titleElement = document.createElement("h3");
