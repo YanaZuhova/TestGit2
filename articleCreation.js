@@ -1,18 +1,26 @@
-export
-let arts = [
-    { title: "Why JS", text: "Lorem ipsum dolor sit! Inventore?", file: "JS.html", linkText: "Читать статью о JS"},
-    { title: "Tехнологии", text: "Статья про технологии", file: "Tekhnolog.html", linkText: "Читать статью о Tekhno"},
+export let arts = [
+    {
+        title: "Why JS",
+        text: "Lorem ipsum dolor sit! Inventore?",
+        file: "JS.html",
+        linkText: "Читать статью о JS",
+    },
+    {
+        title: "Tехнологии",
+        text: "Статья про технологии",
+        file: "Tekhnolog.html",
+        linkText: "Читать статью о Tekhno",
+    },
 ];
 
-export
-  let dataArt = arts.map((art) => {
-  let { title, text, file, linkText } = art;
+export let dataArt = data.arts.map((art) => {
+    let { title, text, file, linkText } = art;
 
-  // console.log(title);
-  // console.log(text);
-  // console.log(file);
+    // console.log(title);
+    // console.log(text);
+    // console.log(file);
 
-  let artCard = document.createElement("article");
+    let artCard = document.createElement("article");
     artCard.className = "element";
 
     const titleElement = document.createElement("h3");

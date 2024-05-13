@@ -1,4 +1,6 @@
-import { arts, dataArt } from "./articleCreation.js";
+// import { arts, dataArt } from "./articleCreation.js";
+
+import data from "./articlesService.json" with { type: "json" };
 
 let articles = document.getElementById("allArticles");
 articles.innerText = "Все статьи (3)";
