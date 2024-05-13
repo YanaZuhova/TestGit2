@@ -1,3 +1,5 @@
+import data from "./articlesService.json" with { type: "json" };
+
 export let arts = [
     {
         title: "Why JS",
@@ -15,10 +17,6 @@ export let arts = [
 
 export let dataArt = data.arts.map((art) => {
     let { title, text, file, linkText } = art;
-
-    // console.log(title);
-    // console.log(text);
-    // console.log(file);
 
     let artCard = document.createElement("article");
     artCard.className = "element";
